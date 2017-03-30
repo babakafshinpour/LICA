@@ -6,8 +6,10 @@ The code is imported in python using swig.
 # How to compile
 The compilation is straight forward just run in the current directory:
 
+```shell
 python setup.py build_ext --inplace
 python ./setup.py install
+```
 
 The installation generates the mi.so (in linux, and mac) in the current directory. Copy this file to site-packages subfolder in python installation directory.
 
