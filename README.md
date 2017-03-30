@@ -11,8 +11,9 @@ python ./setup.py install
 
 The installation generates the mi.so (in linux, and mac) in the current directory. Copy this file to site-packages subfolder in python installation directory.
 
-#Example (Mutual information estimation)
+# Example (Mutual information estimation)
 
+```python
 import mi
 
 x = np.randn(1000,10)
@@ -21,12 +22,12 @@ k = 7
 
 z = np.concatenate((x,y),axis=1)
 mivalue = mi.mixnyn(z,x.shape[1],k)
-
+```
 The above code, calculate the mutual information between x, and y using Kraskov method with k=7.
 
 # Example (ICA estimation, demixing matrix estimation)
 
-
+```python
 import mi
 import numpy as np
 
@@ -51,3 +52,4 @@ y=np.matrix(x)*(np.matrix(Whitening_mat).T)
 ica_demixing     = mi.mlica(y,k, method, nrot, nharm, addnoise)  # ICA de-mixing matrix
 
 Rall = np.matrix(ica_demixing)*np.matrix(Whitening_mat)  # The final transform (Matrix whitenning and ica demixing)
+```
