@@ -13,7 +13,7 @@ python ./setup.py install
 
 Important: The installation generates the _mi.so  and mi.py in the code directory. Copy these files to site-packages subfolder in python installation directory.
 The site-packages subfolder is usually located at <python installation directory>/lib/python2.7/site-packages/
-The code test for Mac Os, and Linux and not windows.
+The code test for Mac Os, and Linux (Centos 6.8, and Ubuntu) and  but not windows.
 
 # Example (Mutual information estimation)
 
