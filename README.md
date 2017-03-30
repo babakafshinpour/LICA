@@ -11,15 +11,18 @@ python setup.py build_ext --inplace
 python ./setup.py install
 ```
 
-The installation generates the mi.so (in linux, and mac) in the current directory. Copy this file to site-packages subfolder in python installation directory.
+Important: The installation generates the _mi.so  and mi.py in the code directory. Copy these files to site-packages subfolder in python installation directory.
+The site-packages subfolder is usually located at <python installation directory>/lib/python2.7/site-packages/
+The code test for Mac Os, and Linux and not windows.
 
 # Example (Mutual information estimation)
 
 ```python
 import mi
+import numpy as np
 
-x = np.randn(1000,10)
-y = np.randn(1000,3)
+x = np.random.randn(1000,10)
+y = np.random.randn(1000,3)
 k = 7
 
 z = np.concatenate((x,y),axis=1)
