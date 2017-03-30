@@ -1,7 +1,7 @@
 # Least dependent component analysis and mutual Information estimation based on KNN
 The least dependent component analysis and mutual information repository implements the codes by Kraskov et al originally written in C.
 The original C code can be found in https://www.ucl.ac.uk/ion/departments/sobell/Research/RLemon/MILCA/MILCA
-The code is imported in python using swig. 
+The original C code is imported in Python using swig (http://www.swig.org).
 
 # How to compile
 The compilation is straight forward just run in the current directory:
