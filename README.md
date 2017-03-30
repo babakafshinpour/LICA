@@ -3,7 +3,7 @@ The least dependent component analysis and mutual information repository impleme
 The original C code can be found in https://www.ucl.ac.uk/ion/departments/sobell/Research/RLemon/MILCA/MILCA
 The code is imported in python using swig. 
 
-#How to compile
+# How to compile
 The compilation is straight forward just run in the current directory:
 
 python setup.py build_ext --inplace
