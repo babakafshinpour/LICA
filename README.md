@@ -1,23 +1,24 @@
 # Least dependent component analysis and mutual Information estimation based on KNN
-The least dependent component analysis and mutual information repository implements the codes by Kraskov et al originally written in C.
+The least dependent component analysis and mutual information repository implements the C codes by Kraskov et al in python.
 The original C code can be found in https://www.ucl.ac.uk/ion/departments/sobell/Research/RLemon/MILCA/MILCA
 The original C code is imported in Python using swig (http://www.swig.org).
 
-The code is written and imported by Babak Afshin-Pour.
+This module is written and imported by Babak Afshin-Pour.
 
 # How to compile
-The compilation is straight forward just run in the current directory:
+The compilation is straight forward with the follwing commands in the source directory:
 
 ```shell
 python setup.py build_ext --inplace
 python ./setup.py install
 ```
 
-Important: The installation generates the _mi.so  and mi.py in the code directory. Copy these files to site-packages subfolder in python installation directory.
+Important: The installation process generates the  _mi.so  and mi.py files in the source directory. These files need to be copied to the site-packages subfolder in the python installation directory.
 The site-packages subfolder is usually located at <python installation directory>/lib/python2.7/site-packages/
-The code test for Mac Os, and Linux (Centos 6.8, and Ubuntu) and  but not windows.
+The compiled module has been tested in Mac Os, and Linux (Centos 6.8, and Ubuntu).
 
-# Example (Mutual information estimation)
+
+# Usage (Mutual information estimation)
 
 ```python
 import mi
