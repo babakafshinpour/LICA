@@ -6,14 +6,14 @@ The original C code is imported in Python using swig (http://www.swig.org).
 This module is written and imported by Babak Afshin-Pour.
 
 # How to compile
-The compilation is straight forward with the follwing commands in the source directory:
+The compilation is straight forward with running the follwing commands in the source directory:
 
 ```shell
 python setup.py build_ext --inplace
 python ./setup.py install
 ```
 
-Important: The installation process generates the  _mi.so  and mi.py files in the source directory. These files need to be copied to the site-packages subfolder in the python installation directory.
+Important: The installation process generates the  _mi.so  and mi.py files in the source directory. These files are needed to be copied to the site-packages subfolder in the python installation directory.
 The site-packages subfolder is usually located at <python installation directory>/lib/python2.7/site-packages/
 The compiled module has been tested in Mac Os, and Linux (Centos 6.8, and Ubuntu).
 
